@@ -2,7 +2,12 @@
 <html>
   <head>
     <title>Upload a Cat</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="/styles/main.css" />
   </head>
   <body>
@@ -11,27 +16,57 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
-          <h2 class="text-center mb-4 mt-4">Upload a Cat</h2>
+          <h2 class="text-center mb-4 mt-4">Upload a Image</h2>
           <form action="/upload" method="POST" enctype="multipart/form-data">
             <div class="form-group">
-              <label for="name">Cat's Name</label>
-              <input type="text" class="form-control" id="name" name="name" required>
+              <label for="name">Image Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="age">Age</label>
-              <input type="number" class="form-control" id="age" name="age" required>
+              <input
+                type="number"
+                class="form-control"
+                id="age"
+                name="age"
+                required
+              />
             </div>
             <div class="form-group">
-              <label for="favoriteFood">Favorite Food</label>
-              <input type="text" class="form-control" id="favoriteFood" name="favoriteFood" required>
+              <label for="favoriteFood">Created by</label>
+              <input
+                type="text"
+                class="form-control"
+                id="favoriteFood"
+                name="favoriteFood"
+                required
+              />
             </div>
             <div class="form-group">
-              <label for="funFact">Fun Fact</label>
-              <input type="text" class="form-control" id="funFact" name="funFact" required>
+              <label for="funFact">Uploaded by</label>
+              <input
+                type="text"
+                class="form-control"
+                id="funFact"
+                name="funFact"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="image">Image</label>
-              <input type="file" class="form-control-file" id="image" name="image" required>
+              <input
+                type="file"
+                class="form-control-file"
+                id="image"
+                name="image"
+                required
+              />
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
